@@ -1,0 +1,6 @@
+name: ThreeSizeInventoryCraft
+main: me.kei.three.inventory.craft.minecraft.ThreeSizeInventoryCraft
+author: Kei
+version: 1
+api-version: 1.15
+description: Three size inventory craft
