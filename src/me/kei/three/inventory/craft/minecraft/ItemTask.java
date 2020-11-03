@@ -19,6 +19,12 @@ public class ItemTask extends BukkitRunnable {
                 for(int i : plugin.getConfig().getIntegerList("slot")){
                     p.getInventory().setItem(i, Item.lockItem);
                 }
+            } else {
+                for(int i : plugin.getConfig().getIntegerList("slot")){
+                    if(p.getInventory().getItem(i).isSimilar(Item.lockItem)){
+                        p.getInventory().setItem(i, new ItemStack(Material.AIR, 0));
+                    }
+                }
             }
         }
     }
